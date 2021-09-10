@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background: transparent;
+    background-color: #fef9e6;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    padding: 22px;
+    margin: 0;
+    overflow: hidden;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a:hover {
+    color: #ff0157;
+}
+
+footer {
+    background-color: #394d5f;
+    height: 100px;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: #fef9e6;
+    mix-blend-mode: darken;
+}
+
+.showcase {
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.showcase.active {
+    right: 100px;
+}
+
+.showcase video {
+    position: relative;
+    height: 720px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #394d5f;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #394d5f;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #394d5f;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.text span {
+    color: #ff0157;
+}
+
+.horizontal-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: auto;
+    overflow-y: 25px;
+    background-color: #ffffff;
+    height: 511px;
+    width: 70%;
+    margin-left: 350px;
+}
+
+.conteiner {
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 30px;
+}
+
+.conteiner .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #ffffff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+}
+
+.conteiner .card :hover {
+    height: 500px;
+}
+
+.conteiner .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.conteiner .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.conteiner .card .Content {
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.conteiner .card:hover .Content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -5px;
+    transition-delay: 0.5s;
+}
+
+.Content a:hover {
+    letter-spacing: 6px;
+}
+
+.Content a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.all-build-Saratov a {
+    display: inline-block;
+    font-size: 1em;
+    background: rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    transition: 0.2s;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 1100px;
+    margin-right: 900px;
+    margin-bottom: 50px;
+}
+
+.all-build-Saratov a:hover {
+    letter-spacing: 6px;
+}

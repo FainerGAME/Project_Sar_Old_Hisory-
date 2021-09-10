@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <title>History Saratov</title>
+    <link rel='stylesheet' href='page-header.module.css'>
+    <link rel='stylesheet' href='swiper.css'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section class='showcase'>
+        <header class='page-header'>
+            <h1 class='logo'>
+                <a href='#'>
+            Historical Saratov <span>.</span>
+        </a>
+            </h1>
+            <ul class='navigation'>
+                <li> <a href='#'>Домашння страница</a></li>
+                <li> <a href='#'>Карта</a></li>
+                <li> <a href='#'>Избранное</a></li>
+                <li> <a href='#'>Связь с нами</a></li>
+                <li> <a href="#">Log in</a>/<a href="#">Sing up</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <video autoplay loop muted class="Video">
+            <source src='video/Fly_Saratov.mp4' type="video/mp4" />
+            </video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2> Взгляни на свой город по новому! </h2>
+                <h3>С нами ты сможешь исследовать каждый закаулок <span>родного</span> города</h3>
+                <a href="#">Начать путешествие</a>
+            </div>
+        </main>
+    </section>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://drive.google.com/file/d/1vnygjJ-Pma2sIppuN5IDZEOFVj5YbKa3/view?usp=sharing" alt=""></div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <div class="all-build-Saratov">
+        <a href="#">Ещё здания Саратова</a>
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
