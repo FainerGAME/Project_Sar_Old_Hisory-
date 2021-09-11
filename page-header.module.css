@@ -55,6 +55,10 @@ header .navigation li a:hover {
     color: #ff0157;
 }
 
+header .navigation li a:active {
+    color: gray
+}
+
 footer {
     background-color: #394d5f;
     height: 100px;
@@ -146,73 +150,6 @@ footer {
 
 .text span {
     color: #ff0157;
-}
-
-.horizontal-scroll {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow-x: auto;
-    overflow-y: 25px;
-    background-color: #ffffff;
-    height: 511px;
-    width: 70%;
-    margin-left: 350px;
-}
-
-.conteiner {
-    position: relative;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 30px;
-}
-
-.conteiner .card {
-    position: relative;
-    max-width: 300px;
-    height: 215px;
-    background-color: #ffffff;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s ease-in-out;
-}
-
-.conteiner .card :hover {
-    height: 500px;
-}
-
-.conteiner .card .imgBx {
-    position: relative;
-    width: 260px;
-    height: 260px;
-}
-
-.conteiner .card .imgBx img {
-    max-width: 100%;
-    border-radius: 4px;
-}
-
-.conteiner .card .Content {
-    position: relative;
-    margin-top: -100px;
-    padding: 10px 15px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-}
-
-.conteiner .card:hover .Content {
-    visibility: visible;
-    opacity: 1;
-    margin-top: -5px;
-    transition-delay: 0.5s;
 }
 
 .Content a:hover {
