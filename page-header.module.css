@@ -170,6 +170,16 @@ footer {
     transition: 0.2s;
 }
 
+.all-build-Saratov {
+    position: relative;
+    min-height: 1vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
 .all-build-Saratov a {
     display: inline-block;
     font-size: 1em;
@@ -184,11 +194,42 @@ footer {
     transition: 0.2s;
     align-items: center;
     margin-top: 50px;
-    margin-left: 1100px;
-    margin-right: 900px;
     margin-bottom: 50px;
 }
 
 .all-build-Saratov a:hover {
     letter-spacing: 6px;
+}
+
+.block {
+    width: 10;
+    height: 0;
+    border-style: solid;
+    border-width: 25em;
+    max-width: 100%;
+    /* размер и форма */
+    border-color: #ff0157 transparent transparent #394d5f;
+    /* red — цвет */
+    filter: drop-shadow(0 0 5px #000);
+    /* тень */
+    position: relative;
+}
+
+.textAr {
+    position: relative;
+    min-height: 1vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    bottom: 230px;
+}
+
+.textAr h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fef9e6;
+    line-height: 1em;
+    text-transform: uppercase;
 }
