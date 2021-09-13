@@ -6,6 +6,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainpage {
+    flex: 1 1 auto;
+}
+
 header {
     display: flex;
     position: fixed;
@@ -60,6 +75,7 @@ header .navigation li a:active {
 }
 
 footer {
+    position: relative;
     background-color: #394d5f;
     height: 100px;
     width: 100%;
@@ -208,7 +224,7 @@ footer {
     border-width: 25em;
     max-width: 100%;
     /* размер и форма */
-    border-color: #ff0157 transparent transparent #394d5f;
+    border-color: #ff0156ab transparent transparent;
     /* red — цвет */
     filter: drop-shadow(0 0 5px #000);
     /* тень */
@@ -223,7 +239,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    bottom: 230px;
+    bottom: 250px;
 }
 
 .textAr h2 {
@@ -232,4 +248,35 @@ footer {
     color: #fef9e6;
     line-height: 1em;
     text-transform: uppercase;
+}
+
+.aAr {
+    display: flex;
+    position: relative;
+    min-height: 1vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    bottom: 300px;
+}
+
+.aAr a {
+    display: inline-block;
+    font-size: 1em;
+    background: rgb(255, 255, 255);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.aAr a:hover {
+    letter-spacing: 6px;
 }

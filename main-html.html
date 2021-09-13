@@ -11,86 +11,150 @@
 </head>
 
 <body>
-    <section class='showcase'>
-        <header class='page-header'>
-            <h1 class='logo'>
-                <a href='#'>
-            Historical Saratov <span>.</span>
-        </a>
-            </h1>
-            <ul class='navigation'>
-                <li> <a href='#'>Домашння страница</a></li>
-                <li> <a href='#'>Карта</a></li>
-                <li> <a href='#'>Избранное</a></li>
-                <li> <a href='#'>Связь с нами</a></li>
-                <li> <a href="#">Log in</a>/<a href="#">Sing up</a></li>
-            </ul>
-        </header>
+    <div class='wrapper'>
+        <div class='mainpage'>
+            <section class='showcase'>
+                <header class='page-header'>
+                    <h1 class='logo'>
+                        <a href='#'>
+                    Historical Saratov <span>.</span>
+                </a>
+                    </h1>
+                    <ul class='navigation'>
+                        <li> <a href='#'>Домашння страница</a></li>
+                        <li> <a href='#'>Карта</a></li>
+                        <li> <a href='#'>Избранное</a></li>
+                        <li> <a href='#'>Связь с нами</a></li>
+                        <li> <a href="#">Log in</a>/<a href="#">Sing up</a></li>
+                    </ul>
+                </header>
 
-        <main>
-            <video autoplay loop muted class="Video">
-            <source src='video/Fly_Saratov.mp4' type="video/mp4" />
+                <main>
+                    <video autoplay loop muted class="Video">
+                <source src='video/Fly_Saratov.mp4' type="video/mp4" />
             </video>
-            <div class="overlay"></div>
-            <div class="text">
-                <h2> Взгляни на свой город по новому! </h2>
-                <h3>С нами ты сможешь исследовать каждый закаулок <span>родного</span> города</h3>
-                <a href="#">Начать путешествие</a>
+                    <div class="overlay"></div>
+                    <div class="text">
+                        <h2> Взгляни на свой город по новому! </h2>
+                        <h3>С нами ты сможешь исследовать каждый закаулок <span>родного</span> города</h3>
+                        <a href="#">Начать путешествие</a>
+                    </div>
+                </main>
+            </section>
+
+            <!--Block Swiper Build-->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-57.userapi.com/impg/Z4bLIm84IWbkqB10awWALieAypIuONEGCn4MmA/AeWQy6_hR2E.jpg?size=1200x1600&quality=96&sign=72a16cfeac3979e1c8c922b4a25e2295&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-67.userapi.com/impg/UBSdHTm-wt4urMWz_4qWl9-YK43mH74jxdkssA/wc94GTvnPBs.jpg?size=1600x1200&quality=96&sign=a6a501e1176aeabd7d29be91328f2dc7&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-76.userapi.com/impg/Y4aYBWgpT1MhQmJVadEcQoqYGT_kaCn0hRe82A/yJO_wmiZwXQ.jpg?size=1600x1200&quality=96&sign=712cfe99b296a39cfc89e1d7ea8ab277&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-8.userapi.com/impg/KE_wX5s658P7mG-NBJJQKmvJi4ld_DnJRmBcdg/Yzp6j7Ek8gk.jpg?size=1272x960&quality=96&sign=13389dfc98deb76cf5fee98f6aa72573&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-42.userapi.com/impg/beoaCGb4BsJepBBsCUujSfSqpolBdJmSytWMxA/qd3K5TGvMd8.jpg?size=1600x1200&quality=96&sign=0160bd4b2a43ea7985b15a8804de28ac&type=album" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-        </main>
-    </section>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="#"><img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt=""></a>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    freeMode: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+            <!--Block Swiper Build End-->
+
+            <!--Buttom more Build-->
+            <div class="all-build-Saratov">
+                <a href="#">Ещё здания Саратова</a>
             </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="https://sun9-57.userapi.com/impg/Z4bLIm84IWbkqB10awWALieAypIuONEGCn4MmA/AeWQy6_hR2E.jpg?size=1200x1600&quality=96&sign=72a16cfeac3979e1c8c922b4a25e2295&type=album" alt=""></a>
+            <!--Buttom more Build End-->
+
+            <!--Block Architecrot-->
+            <div class="block">
+                <div class='textAr'>
+                    <h2>Архитекторы Саратова</h2>
+                </div>
+                <div class="aAr">
+                    <a href="#">Узнать больше</a>
+                </div>
+                <!--Block Architecrot End-->
+
+                <!--Block Swiper-->
+
+                <!--Block Swiper End-->
+
+
             </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="https://sun9-67.userapi.com/impg/UBSdHTm-wt4urMWz_4qWl9-YK43mH74jxdkssA/wc94GTvnPBs.jpg?size=1600x1200&quality=96&sign=a6a501e1176aeabd7d29be91328f2dc7&type=album" alt=""></a>
+            <!--Block Architecrot End-->
+
+            <!--Swiper Arch-->
+            <div class="swiper mySwiper" style="bottom: 450px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-57.userapi.com/impg/Z4bLIm84IWbkqB10awWALieAypIuONEGCn4MmA/AeWQy6_hR2E.jpg?size=1200x1600&quality=96&sign=72a16cfeac3979e1c8c922b4a25e2295&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-67.userapi.com/impg/UBSdHTm-wt4urMWz_4qWl9-YK43mH74jxdkssA/wc94GTvnPBs.jpg?size=1600x1200&quality=96&sign=a6a501e1176aeabd7d29be91328f2dc7&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-76.userapi.com/impg/Y4aYBWgpT1MhQmJVadEcQoqYGT_kaCn0hRe82A/yJO_wmiZwXQ.jpg?size=1600x1200&quality=96&sign=712cfe99b296a39cfc89e1d7ea8ab277&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-8.userapi.com/impg/KE_wX5s658P7mG-NBJJQKmvJi4ld_DnJRmBcdg/Yzp6j7Ek8gk.jpg?size=1272x960&quality=96&sign=13389dfc98deb76cf5fee98f6aa72573&type=album" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="https://sun9-42.userapi.com/impg/beoaCGb4BsJepBBsCUujSfSqpolBdJmSytWMxA/qd3K5TGvMd8.jpg?size=1600x1200&quality=96&sign=0160bd4b2a43ea7985b15a8804de28ac&type=album" alt=""></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="https://sun9-76.userapi.com/impg/Y4aYBWgpT1MhQmJVadEcQoqYGT_kaCn0hRe82A/yJO_wmiZwXQ.jpg?size=1600x1200&quality=96&sign=712cfe99b296a39cfc89e1d7ea8ab277&type=album" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="https://sun9-8.userapi.com/impg/KE_wX5s658P7mG-NBJJQKmvJi4ld_DnJRmBcdg/Yzp6j7Ek8gk.jpg?size=1272x960&quality=96&sign=13389dfc98deb76cf5fee98f6aa72573&type=album" alt=""></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="#"><img src="https://sun9-42.userapi.com/impg/beoaCGb4BsJepBBsCUujSfSqpolBdJmSytWMxA/qd3K5TGvMd8.jpg?size=1600x1200&quality=96&sign=0160bd4b2a43ea7985b15a8804de28ac&type=album" alt=""></a>
-            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    freeMode: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+            <!--Swiper Arch End-->
+
         </div>
-        <div class="swiper-pagination"></div>
+        <footer>
+        </footer>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
-
-    <div class="all-build-Saratov">
-        <a href="#">Ещё здания Саратова</a>
-    </div>
-
-    <div class="block">
-        <div class='textAr'>
-            <h2>Архитекторы Саратова</h2>
-        </div>
-
-    </div>
-    <footer>
-    </footer>
 </body>
+
 
 </html>
