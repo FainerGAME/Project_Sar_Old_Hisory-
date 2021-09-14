@@ -280,3 +280,83 @@ footer {
 .aAr a:hover {
     letter-spacing: 6px;
 }
+
+.text-swiper-Arch {
+    position: absolute;
+    right: 200px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+}
+
+.text-swiper-build {
+    position: absolute;
+    align-items: center;
+    right: 130px;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.flour {
+    left: 134px;
+    position: absolute;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.text-swiper-build a {
+    display: inline-block;
+    font-size: 1em;
+    background: rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-bottom: 50px;
+}
+
+.text-swiper-build a:hover {
+    letter-spacing: 6px;
+}
+
+.flour a {
+    display: inline-block;
+    font-size: 1em;
+    background: rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-bottom: 50px;
+}
+
+.flour a:hover {
+    letter-spacing: 6px;
+}
+
+.text-swiper-build h2 {
+    background-color: white;
+}
+
+.flour h2 {
+    background-color: white;
+}
