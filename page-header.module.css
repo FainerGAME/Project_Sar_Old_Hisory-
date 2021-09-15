@@ -77,8 +77,103 @@ header .navigation li a:active {
 footer {
     position: relative;
     background-color: #394d5f;
-    height: 100px;
-    width: 100%;
+    padding: 70px 0;
+}
+
+.footer-logo {
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fef9e6;
+}
+
+footer .footer-logo span {
+    color: #ff0157;
+}
+
+.conteiner-footer {
+    max-width: 1170px;
+    background-color: #394d5f;
+    margin: auto;
+}
+
+.conteiner-footer ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 600;
+    position: relative;
+    color: #fef9e6;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ff0157;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fef9e6;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: 0.3s;
+    letter-spacing: 2px;
+}
+
+.footer-col ul li a:hover {
+    color: #ff0157;
+    letter-spacing: 3px;
+}
+
+.footer-col ul li a:active {
+    color: gray;
+}
+
+.social-link i {
+    color: #fef9e6;
+    font-size: 25px;
+}
+
+.social-link i:hover {
+    color: #ff0157;
+}
+
+.social-link i:active {
+    color: gray;
+}
+
+@media (max-width:767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
 
 .overlay {
@@ -283,23 +378,47 @@ footer {
 
 .text-swiper-Arch {
     position: absolute;
-    right: 200px;
-    color: #fff;
+    align-items: center;
+    padding-left: 134px;
+    top: 95px;
+    font-size: 1em;
     text-transform: uppercase;
     text-decoration: none;
-    align-items: center;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.text-swiper-Arch a {
+    display: inline-block;
+    font-size: 1em;
+    background: rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text-swiper-Arch a:hover {
+    letter-spacing: 6px;
+}
+
+.text-swiper-Arch h2 {
+    background-color: white;
 }
 
 .text-swiper-build {
     position: absolute;
     align-items: center;
-    right: 130px;
-    text-decoration: none;
+    padding-left: 134px;
+    top: 95px;
     font-size: 1em;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 700;
-    margin-top: 10px;
+    font-weight: 500;
     color: rgb(0, 0, 0);
 }
 
@@ -307,7 +426,6 @@ footer {
     left: 134px;
     position: absolute;
     align-items: center;
-    text-decoration: none;
     font-size: 1em;
     text-transform: uppercase;
     text-decoration: none;
@@ -327,7 +445,6 @@ footer {
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     transition: 0.2s;
-    margin-bottom: 50px;
 }
 
 .text-swiper-build a:hover {
@@ -346,7 +463,6 @@ footer {
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     transition: 0.2s;
-    margin-bottom: 50px;
 }
 
 .flour a:hover {
