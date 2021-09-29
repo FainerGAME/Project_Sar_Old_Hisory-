@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width">
+    <meta name="viewpoint" content="width=device-width" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>History Saratov</title>
     <link rel='stylesheet' href='page-header.module.css'>
     <link rel='stylesheet' href='swiper.css'>
@@ -25,10 +25,10 @@
                     </h1>
                     <ul class='navigation'>
                         <li> <a href='C:\Users\USER\Documents\GitHub\Project_Sar_Old_Hisory-\main-html.html'>Домашння страница</a></li>
-                        <li> <a href='#'>Карта</a></li>
+                        <li> <a href='./HTML/maps-page.html'>Карта</a></li>
                         <li> <a href='#'>Избранное</a></li>
                         <li> <a href='#'>Связь с нами</a></li>
-                        <li> <a href="#">Log in</a>/<a href="#">Sing up</a></li>
+                        <li> <a href="#login " class="button popup-link">Log in</a>/<a href="#reg" class="button popup-link">Sing up</a></li>
                     </ul>
                 </header>
 
@@ -40,7 +40,7 @@
                     <div class="text">
                         <h2> Взгляни на свой город по новому! </h2>
                         <h3>С нами ты сможешь исследовать каждый закоулок <span>родного</span> города</h3>
-                        <a href="#">Начать путешествие</a>
+                        <a href="#reg" class="button popup-link">Начать путешествие</a>
                     </div>
                 </main>
             </section>
@@ -123,7 +123,7 @@
                     <h2>Архитекторы Саратова</h2>
                 </div>
                 <div class="aAr">
-                    <a href="#">Узнать больше</a>
+                    <a href="file:///C:/Users/USER/Documents/GitHub/Project_Sar_Old_Hisory-/HTML/all_arch.html#">Узнать больше</a>
                 </div>
                 <!--Block Architecrot End-->
 
@@ -249,6 +249,37 @@
 
         </footer>
     </div>
+
+
+    <div id="reg" class="popup ">
+        <a href="# " class="popup_area "></a>
+        <div class="popup_body ">
+            <div class="popup_content ">
+                <div class="popup_title ">Регистрация</div>
+                <input type="text" class="login-input" name="username" placeholder="Username" required />
+                <input type="text" class="login-input" name="email" placeholder="Email Adress">
+                <input type="password" class="login-input" name="password" placeholder="Password">
+                <input type="submit" name="submit" value="Register" class="login-button">
+                <p><a href="login.php" class="link">Click to Login</a></p>
+                <a href="# " class="popup_close close-popup " "><i class="fas fa-times "></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="login " class="popup ">
+        <a href="# " class="popup_area "></a>
+        <div class="popup_body ">
+            <div class="popup_content ">
+                <div class="popup_title ">Вход</div>
+                <input type="text " class="login-input " name="username " placeholder="Username " required />
+                <input type="text " class="login-input " name="email " placeholder="Email Adress ">
+                <input type="password " class="login-input " name="password " placeholder="Password ">
+                <p><a href="login.php " class="link ">Click to Login</a></p>
+                <a href="# " class="popup_close close-popup " "><i class="fas fa-times "></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="C:\Users\USER\Documents\GitHub\Project_Sar_Old_Hisory-\js\popup.js "></script>
 </body>
 
 

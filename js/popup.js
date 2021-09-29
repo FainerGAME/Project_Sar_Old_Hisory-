@@ -50,7 +50,7 @@ function popupClose(popupActive, doUnlock = true) {
     if (unlock) {
         popupActive.classList.remove('open');
         if (doUnlock) {
-            bodyLock();
+            bodyUnLock();
         }
     }
 }
@@ -76,7 +76,7 @@ function bodyUnLock() {
         if (lockPadding.length > 0) {
             for (let index = 0; index < lockPadding.length; index++) {
                 const el = lockPadding[index];
-                el.style.paddingRight = '0px'
+                el.style.paddingRight = '0px';
             }
         }
         body.style.paddingRight = '0px';
@@ -88,10 +88,3 @@ function bodyUnLock() {
         unlock = true;
     }, timeout);
 }
-
-document.addEventListener('keydown', function(e) {
-    if (e.which === 27) {
-        const popupActive = document.querySelector('.popuo.open');
-        popupClose(popupActive);
-    }
-});

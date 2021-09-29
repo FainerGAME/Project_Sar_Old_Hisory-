@@ -1,0 +1,10 @@
+{
+    "tags": [
+        "swiper"
+    ],
+    "name": "Swiper - Effect cards",
+    "dependencies": {
+        "swiper": "latest",
+        "parcel-bundler": "^1.6.1"
+    }
+}
