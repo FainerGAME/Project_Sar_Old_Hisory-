@@ -602,3 +602,13 @@ footer .footer-logo span {
     background-color: #fef9e6;
     color: black;
 }
+
+.hebuild img{
+    max-height: 30%;
+    max-width: 30%;
+}
+
+.archimg img{
+    max-height: 50%;
+    max-width: 50%;
+}

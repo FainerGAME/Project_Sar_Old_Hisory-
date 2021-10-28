@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Карта Саратова</title>
     <link rel='stylesheet' href='C:\Users\USER\Documents\GitHub\Project_Sar_Old_Hisory-\CSS\maps-page.moduls.css'>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
 </head>
 
 <header class='page-header'>
@@ -27,7 +29,58 @@
 <body>
     <div class="wrapper">
         <div class="content">
+            <div id="map"></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZmFpbmVyZ2FtZSIsImEiOiJja3V6ODAwbWozZ253MnZxcjFhM2Fld3V3In0.ffXGRmSxporsm4d4t6Sb9A';
+                const map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/light-v10',
+                    center: [46.01922959562046,51.53305428193184],
+                    zoom: 14,
+                    attributionControl: false
+                });
+                map.addControl(new mapboxgl.AttributionControl(), 'top-left');
+            </script>
 
+            <div class = 'headerinfo'>
+                <h2>Все здания на карте</h2>
+            </div>
+            <div class="infoblock">
+                <img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt="" >
+                <h3>Title</h3>
+                <p>Some Description</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="infoblock-sec">
+                <img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" >
+                <h3>Title</h3>
+                <p>Some Description</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="infoblock-sec">
+                <img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt="" >
+                <h3>Title</h3>
+                <p>Some Description</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="infoblock-sec">
+                <img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt="" >
+                <h3>Title</h3>
+                <p>Some Description</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="infoblock-sec">
+                <img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt="" >
+                <h3>Title</h3>
+                <p>Some Description</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="infoblock-sec">
+                <img src="https://sun9-51.userapi.com/impg/BELSQsvLFfXhRcJFdPXWFFu3yZSZvz1z73CVIQ/WxE_gj0wli4.jpg?size=1600x1200&quality=96&sign=4a0f0197e70916e58623af316fd82ef2&type=album" alt="" >
+                <h3>Title</h3>
+                <p>Some Description</p>
+                <button>Подробнее</button>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -87,7 +140,7 @@
                 <input type="password" class="login-input" name="password" placeholder="Password">
                 <input type="submit" name="submit" value="Register" class="login-button">
                 <p><a href="login.php" class="link">Click to Login</a></p>
-                <a href="# " class="popup_close close-popup " "><i class="fas fa-times "></i></a>
+                <a href="# " class="popup_close close-popup " ><i class="fas fa-times "></i></a>
             </div>
         </div>
     </div>
@@ -100,7 +153,7 @@
                 <input type="text " class="login-input " name="email " placeholder="Email Adress ">
                 <input type="password " class="login-input " name="password " placeholder="Password ">
                 <p><a href="login.php " class="link ">Click to Login</a></p>
-                <a href="# " class="popup_close close-popup " "><i class="fas fa-times "></i></a>
+                <a href="# " class="popup_close close-popup " ><i class="fas fa-times "></i></a>
             </div>
         </div>
     </div>
